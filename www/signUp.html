@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Roomator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- linking the css file that was created -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <!-- linking the javascript file that was created -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+                    <span class="login100-form-title">
+                        Roomator
+                    </span>
+                    <!-- div created to get imput(name) from the user -->
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                        <input id="name1" class="input100" type="text" name="username" placeholder="Username">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <!-- div created to get imput(password) from the user -->
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter password">
+                        <input id="password1" class="input100" type="password" name="pass" placeholder="Password">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <!-- div created to get imput(email) from the user -->
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                        <input id="email1" class="input100" type="text" name="email" placeholder="Email">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <!-- div created to get imput(if the user smoke or no) from the user -->
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                        <input id="smoker1" class="input100" type="text" name="Smoker" placeholder="Smoker(yes/no)">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <!-- div created to get imput(age) from the user -->
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                        <input id="age1" class="input100" type="number" name="age" placeholder="Age">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <!-- div created to get imput(first hobbie) from the user -->
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                        <input id="hobbie1" class="input100" type="text" name="hobbie1" placeholder="hobbie1">
+
+                        <span class="focus-input100"></span>
+                    </div>
+                     <!-- div created to get imput(second hobbie) from the user -->  
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                        <input id="hobbie2" class="input100" type="text" name="hobbie2" placeholder="hobbie 2">
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <!-- div created to get imput(third hobbie) from the user -->
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                        <input id="hobbie3" class="input100" type="text" name="hobbie3" placeholder="hobbie 2">
+
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <!-- button created to call the function in charge to send the post request and
+                    finish the registration -->
+                    <div class="container-login100-form-btn">
+                        <button id="button1" class="login100-form-btn"
+                         onclick="signUp()">Sign Up</button>
+                    </div>
+                    <!-- div created to let the user after register can be redirected to the login page -->
+                    <div class="flex-col-c p-t-170 p-b-40">
+                            
+    
+                            <a href="index.html" class="txt3">
+                                Sign in now
+                            </a>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+
+</html>

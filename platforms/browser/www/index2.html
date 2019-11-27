@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- linking the css file that was created -->
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <!-- linking the javascript file that was created -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    
+
+    <title>Roomator</title>
+</head>
+<!-- function userList is called when the page is loaded
+    and the list of compatible user is displaied -->
+<body onload="userList()">
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form p-l-175 p-r-55 p-t-178">
+                    <span class="login100-form-title">
+                        Roomator
+                    </span>
+
+                    <!-- I created all these divs to be able to populate all the users 
+                        that were returned in the list according to the characteristics of the user
+                         who is logged in (distance from location, age and whether or not you are a smoker)  -->
+
+                    <!-- inside of theses divs that was created has a button in charge to call a function 
+                        to tell to the user that he chose his flatmate -->
+
+                    <div  id="div-0" style="display: none;"  class="wrap-input100 validate-input m-b-16"
+                        data-validate="Please enter password" >
+                        <p id="name-0"></p>
+                        <p id="age-0"></p> 
+                        <p id="smoker-0"></p>
+                        <p id="hobbie1-0"></p>
+                        <p id="hobbie2-0"></p>
+                        <p id="hobbie3-0"></p>
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div id="div-1" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-1"></p>
+                        <p id="age-1"></p>
+                        <p id="smoker-1"></p>
+                        <p id="hobbie1-1"></p>
+                        <p id="hobbie2-1"></p>
+                        <p id="hobbie3-1"></p>
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div id="div-2" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-2"></p>
+                        <p id="age-2"></p>
+                        <p id="smoker-2"></p>
+                        <p id="hobbie1-2"></p>
+                        <p id="hobbie2-2"></p>
+                        <p id="hobbie3-2"></p>
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div id="div-3" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-3"></p>
+                        <p id="age-3"></p>
+                        <p id="smoker-3"></p>
+                        <p id="hobbie1-3"></p>
+                        <p id="hobbie2-3"></p>
+                        <p id="hobbie3-3"></p>
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div id="div-4" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-4"></p>
+                        <p id="age-4"></p>
+                        <p id="smoker-4"></p>
+                        <p id="hobbie1-4"></p>
+                        <p id="hobbie2-4"></p>
+                        <p id="hobbie3-4"></p>
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div id="div-5" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-5"></p>
+                        <p id="age-5"></p>
+                        <p id="smoker-5"></p>
+                        <p id="hobbie1-5"></p>
+                        <p id="hobbie2-5"></p>
+                        <p id="hobbie3-5"></p>
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div id="div-6" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-6"></p>
+                        <p id="age-6"></p>
+                        <p id="smoker-6"></p>
+                        <p id="hobbie1-6"></p>
+                        <p id="hobbie2-6"></p>
+                        <p id="hobbie3-6"></p> -->
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div id="div-7" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-7"></p>
+                        <p id="age-7"></p>
+                        <p id="smoker-7"></p>
+                        <p id="hobbie1-7"></p>
+                        <p id="hobbie2-7"></p>
+                        <p id="hobbie3-7"></p> -->
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div id="div-8" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-8"></p>
+                        <p id="age-8"></p>
+                        <p id="smoker-8"></p>
+                        <p id="hobbie1-8"></p>
+                        <p id="hobbie2-8"></p>
+                        <p id="hobbie3-8"></p> -->
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div id="div-9" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-9"></p>
+                        <p id="age-9"></p>
+                        <p id="smoker-9"></p>
+                        <p id="hobbie1_9"></p>
+                        <p id="hobbie2_9"></p>
+                        <p id="hobbie3_9"></p> -->
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div id="div-10" style="display: none;" class="wrap-input100 validate-input"
+                        data-validate="Please enter password">
+                        <p id="name-10"></p>
+                        <p id="age-10"></p>
+                        <p id="smoker-10"></p>
+                        <p id="hobbie1_10"></p>
+                        <p id="hobbie2_10"></p>
+                        <p id="hobbie3_10"></p> -->
+                        <button id="button-1" class="login100-form-btn" onclick="choseMe()">Chose me!</button>
+
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <!-- div created to let the user log out and  be redirected to the login page
+                            after the user chose his flatmante -->
+                    <div class="flex-col-c p-t-30 p-b-30 p-r-110">
+
+
+                        <a href="index.html" class="txt3">
+                            Log out
+                        </a>
+                    </div>
+
+
+
+
+                    </Sdiv>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
